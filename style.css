@@ -1,0 +1,51 @@
+/* =====================================================
+   CLÍNICA DE ESTÉTICA AVANÇADA - COMMIT 2
+   Reset CSS e Variáveis Globais
+   ===================================================== */
+
+/* =====================================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+   ===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #b28a7d;
+    --primary-dark: #9a7268;
+    --primary-light: #d4ad9d;
+    --secondary: #faf9f7;
+    --text-dark: #2c2c2c;
+    --text-medium: #555;
+    --text-light: #777;
+    --white: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--secondary);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
