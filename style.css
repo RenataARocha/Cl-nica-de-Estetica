@@ -1,51 +1,95 @@
 /* =====================================================
-   CLÍNICA DE ESTÉTICA AVANÇADA - COMMIT 2
-   Reset CSS e Variáveis Globais
+   COMMIT 3 - HEADER E NAVEGAÇÃO
+   Adicione este código ao final do arquivo style.css
    ===================================================== */
 
 /* =====================================================
-   RESET E CONFIGURAÇÕES GLOBAIS
+   HEADER/NAVIGATION
    ===================================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
-:root {
-    --primary: #b28a7d;
-    --primary-dark: #9a7268;
-    --primary-light: #d4ad9d;
-    --secondary: #faf9f7;
-    --text-dark: #2c2c2c;
-    --text-medium: #555;
-    --text-light: #777;
-    --white: #ffffff;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
-    --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.15);
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 30px;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: var(--secondary);
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: var(--text-dark);
-    line-height: 1.6;
-    overflow-x: hidden;
+    text-decoration: none;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.logo-icon {
+    font-size: 1.6rem;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
 }
 
-html {
-    scroll-behavior: smooth;
+.nav-menu a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-dark);
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
