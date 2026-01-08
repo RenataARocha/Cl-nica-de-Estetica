@@ -98,7 +98,7 @@ Aguardo confirmação! 😊
     `.trim();
 
         // Criar URL do WhatsApp
-        const url = `https://wa.me/${TELEFONE_WHATSAPP}?text=${encodeURIComponent(mensagem)}`;
+        const url = `https://wa.me/${5584986399847}?text=${encodeURIComponent(mensagem)}`;
 
         // Abrir WhatsApp em nova aba
         window.open(url, "_blank");
