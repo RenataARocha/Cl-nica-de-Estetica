@@ -1,80 +1,148 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!-- ADICIONAR ESTE CÓDIGO APÓS A SEÇÃO HERO E ANTES DO </body> -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica de Estética Avançada | Tratamentos Faciais e Corporais</title>
-    <meta name="description"
-        content="Clínica de estética especializada em tratamentos faciais e corporais. Atendimento humanizado e resultados reais.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- HEADER/NAVIGATION -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <span class="logo-icon">✨</span>
-                    <span class="logo-text">Estética Avançada</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#tratamentos">Tratamentos</a></li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li><a href="#agendamento">Contato</a></li>
-                </ul>
-                <a href="#agendamento" class="btn btn-primary btn-small">Agendar</a>
-                <button class="mobile-menu-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+<!-- DIFERENCIAIS -->
+<section class="diferenciais" id="diferenciais">
+    <div class="container">
+        <div class="diferenciais-grid">
+            <div class="diferencial-card">
+                <div class="diferencial-icon">🎯</div>
+                <h3>Atendimento Personalizado</h3>
+                <p>Cada cliente é único. Desenvolvemos protocolos exclusivos para suas necessidades.</p>
+            </div>
+            <div class="diferencial-card">
+                <div class="diferencial-icon">🔬</div>
+                <h3>Tecnologia Avançada</h3>
+                <p>Equipamentos de última geração para resultados eficazes e seguros.</p>
+            </div>
+            <div class="diferencial-card">
+                <div class="diferencial-icon">👩‍⚕️</div>
+                <h3>Equipe Especializada</h3>
+                <p>Profissionais qualificados e em constante atualização.</p>
+            </div>
+            <div class="diferencial-card">
+                <div class="diferencial-icon">🏆</div>
+                <h3>Ambiente Premium</h3>
+                <p>Espaço confortável e acolhedor para sua experiência ser completa.</p>
+            </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-decorative-circle hero-circle-1"></div>
-        <div class="hero-decorative-circle hero-circle-2"></div>
-        <div class="hero-decorative-circle hero-circle-3"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">Excelência em Estética</span>
-                <h1>Realce sua beleza natural com cuidado especializado</h1>
-                <p>Tratamentos faciais e corporais personalizados com tecnologia avançada e atendimento humanizado.
-                    Resultados reais que transformam.</p>
-                <div class="hero-actions">
-                    <a href="#agendamento" class="btn btn-primary btn-large">Agendar Avaliação Gratuita</a>
-                    <a href="#tratamentos" class="btn btn-secondary btn-large">Conhecer Tratamentos</a>
+<!-- SOBRE -->
+<section class="about" id="sobre">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg" alt="Clínica de Estética">
+                <div class="about-badge">
+                    <strong>15+</strong>
+                    <span>Anos</span>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <strong>+5.000</strong>
-                        <span>Clientes atendidos</span>
-                    </div>
-                    <div class="stat-item">
-                        <strong>98%</strong>
-                        <span>Satisfação</span>
-                    </div>
-                    <div class="stat-item">
-                        <strong>+15</strong>
-                        <span>Anos de experiência</span>
-                    </div>
+            </div>
+            <div class="about-text">
+                <span class="section-tag">Quem Somos</span>
+                <h2>Especialistas em realçar sua beleza natural</h2>
+                <p>Somos uma clínica de estética especializada em tratamentos faciais e corporais, comprometida em
+                    proporcionar resultados reais e duradouros. Nossa missão é valorizar a beleza única de cada cliente
+                    através de técnicas avançadas e atendimento humanizado.</p>
+                <p>Com mais de 15 anos de experiência, nossa equipe está em constante atualização para oferecer o que há
+                    de mais moderno em estética.</p>
+                <ul class="about-list">
+                    <li>✓ Protocolos personalizados para cada tipo de pele</li>
+                    <li>✓ Equipamentos certificados e seguros</li>
+                    <li>✓ Acompanhamento em todas as etapas</li>
+                    <li>✓ Resultados comprovados</li>
+                </ul>
+                <a href="#agendamento" class="btn btn-primary">Conhecer Nossa Clínica</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRATAMENTOS -->
+<section class="tratamentos" id="tratamentos">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Nossos Serviços</span>
+            <h2>Tratamentos Especializados</h2>
+            <p>Soluções completas para cuidar da sua pele e bem-estar</p>
+        </div>
+        <div class="tratamentos-slider">
+            <div class="tratamento-card">
+                <img src="https://images.pexels.com/photos/3985321/pexels-photo-3985321.jpeg" alt="Limpeza de Pele">
+                <div class="tratamento-content">
+                    <span class="tratamento-categoria">Facial</span>
+                    <h3>Limpeza de Pele Profunda</h3>
+                    <p>Remoção profunda de impurezas, cravos e células mortas. Deixa a pele renovada, hidratada e com
+                        aspecto saudável.</p>
+                    <ul class="tratamento-beneficios">
+                        <li>• Desobstrução de poros</li>
+                        <li>• Renovação celular</li>
+                        <li>• Controle da oleosidade</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-link">Agendar consulta →</a>
+                </div>
+            </div>
+            <div class="tratamento-card">
+                <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg" alt="Peeling Químico">
+                <div class="tratamento-content">
+                    <span class="tratamento-categoria">Facial</span>
+                    <h3>Peeling Químico</h3>
+                    <p>Tratamento que uniformiza o tom da pele, reduz manchas e estimula a produção de colágeno para uma
+                        pele mais jovem.</p>
+                    <ul class="tratamento-beneficios">
+                        <li>• Clareamento de manchas</li>
+                        <li>• Uniformização do tom</li>
+                        <li>• Estímulo ao colágeno</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-link">Agendar consulta →</a>
+                </div>
+            </div>
+            <div class="tratamento-card">
+                <img src="https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg" alt="Drenagem Linfática">
+                <div class="tratamento-content">
+                    <span class="tratamento-categoria">Corporal</span>
+                    <h3>Drenagem Linfática</h3>
+                    <p>Técnica manual que reduz inchaço, melhora a circulação e promove eliminação de toxinas do
+                        organismo.</p>
+                    <ul class="tratamento-beneficios">
+                        <li>• Redução de edemas</li>
+                        <li>• Melhora circulatória</li>
+                        <li>• Sensação de leveza</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-link">Agendar consulta →</a>
+                </div>
+            </div>
+            <div class="tratamento-card">
+                <img src="https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg" alt="Microagulhamento">
+                <div class="tratamento-content">
+                    <span class="tratamento-categoria">Facial</span>
+                    <h3>Microagulhamento</h3>
+                    <p>Procedimento que estimula a produção natural de colágeno, tratando cicatrizes, manchas e
+                        rejuvenescendo a pele.</p>
+                    <ul class="tratamento-beneficios">
+                        <li>• Redução de cicatrizes</li>
+                        <li>• Clareamento de manchas</li>
+                        <li>• Rejuvenescimento</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-link">Agendar consulta →</a>
+                </div>
+            </div>
+            <div class="tratamento-card">
+                <img src="https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg" alt="Botox Preventivo">
+                <div class="tratamento-content">
+                    <span class="tratamento-categoria">Facial</span>
+                    <h3>Botox Preventivo</h3>
+                    <p>Aplicação preventiva que suaviza linhas de expressão e previne o surgimento de rugas mais
+                        profundas.</p>
+                    <ul class="tratamento-beneficios">
+                        <li>• Prevenção de rugas</li>
+                        <li>• Suavização de linhas</li>
+                        <li>• Efeito natural</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-link">Agendar consulta →</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+    </div>
+</section>
