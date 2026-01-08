@@ -177,3 +177,94 @@
     font-size: 0.9rem;
     color: var(--text-medium);
 }
+
+/* =====================================================
+   COMMIT 6 - UTILITÁRIOS E DIFERENCIAIS
+   Adicione este código ao final do arquivo style.css
+   ===================================================== */
+
+/* =====================================================
+   SECTION UTILITIES
+   ===================================================== */
+section {
+    padding: 100px 0;
+}
+
+.section-tag {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* =====================================================
+   DIFERENCIAIS
+   ===================================================== */
+.diferenciais {
+    background: white;
+    padding: 80px 0;
+}
+
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.diferencial-card {
+    text-align: center;
+    padding: 40px 30px;
+    background: var(--secondary);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.diferencial-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.diferencial-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.diferencial-card p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
